@@ -14,15 +14,16 @@
       >
         <span class="icon-[mdi--calendar-outline]"></span>
         <time
-          th:text="${#dates.format(post.spec.publishTime, 'yyyy.MM.dd')}"
+          th:text="${#dates.format(post.spec.publishTime, 'yyyy-MM-dd')}"
         ></time>
-        <!-- 更新时间 -->
-        <!-- <span> -->
-        <!--   <i class="far fa-calendar-check"></i> -->
-        <!-- </span> -->
-        <!-- <time -->
-        <!--   th:text="${#dates.format(post.spec.publishTime, 'yyyy.MM.dd')}" -->
-        <!-- ></time> -->
+        <th:block
+          th:if="${#dates.format(post.status.lastModifyTime, 'yyyy-MM-dd')} != ${#dates.format(post.spec.publishTime, 'yyyy-MM-dd')}"
+        >
+          <span class="icon-[mdi--calendar-check-outline]"></span>
+          <time
+            th:text="${#dates.format(post.status.lastModifyTime, 'yyyy-MM-dd')}"
+          ></time>
+        </th:block>
 
         <th:block th:if="${not #lists.isEmpty(post.categories)}">
           <span class="category">
