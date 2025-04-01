@@ -16,13 +16,24 @@
         <time
           th:text="${#dates.format(post.spec.publishTime, 'yyyy-MM-dd')}"
         ></time>
-        <th:block
-          th:if="${#dates.format(post.status.lastModifyTime, 'yyyy-MM-dd')} != ${#dates.format(post.spec.publishTime, 'yyyy-MM-dd')}"
-        >
-          <span class="icon-[mdi--calendar-check-outline]"></span>
-          <time
-            th:text="${#dates.format(post.status.lastModifyTime, 'yyyy-MM-dd')}"
-          ></time>
+
+        <th:block th:if="${#annotations.get(post, 'updateTime')}">
+          <th:block
+            th:if="${post.metadata.annotations.updateTime} != ${#dates.format(post.spec.publishTime, 'yyyy-MM-dd')}"
+          >
+            <span class="icon-[mdi--calendar-check-outline]"></span>
+            <time th:text="${post.metadata.annotations.updateTime}"></time>
+          </th:block>
+        </th:block>
+        <th:block th:unless="${#annotations.get(post, 'updateTime')}">
+          <th:block
+            th:if="${#dates.format(post.status.lastModifyTime, 'yyyy-MM-dd')} != ${#dates.format(post.spec.publishTime, 'yyyy-MM-dd')}"
+          >
+            <span class="icon-[mdi--calendar-check-outline]"></span>
+            <time
+              th:text="${#dates.format(post.status.lastModifyTime, 'yyyy-MM-dd')}"
+            ></time>
+          </th:block>
         </th:block>
 
         <th:block th:if="${not #lists.isEmpty(post.categories)}">
