@@ -1,5 +1,5 @@
 <!doctype html>
-<html xmlns:th="https://www.thymeleaf.org">
+<html lang="zh-CN" xmlns:th="https://www.thymeleaf.org">
   <head
     th:replace="~{module/layout :: head(title = '归档' + ' | ' + ${site.title})}"
   >
@@ -24,7 +24,7 @@
               <a
                 th:href="@{${post.status.permalink}}"
                 th:text="${post.spec.title}"
-                class="font-serif no-underline font-semibold text-black"
+                class="font-serif font-semibold text-black no-underline"
               ></a>
             </span>
           </div>

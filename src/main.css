@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @plugin "@iconify/tailwind4";
+/* @import "./HarmonyOS_Sans_SC/main.css"; */
 
 :root {
   /* --primary-color: #6b4992; */
@@ -17,7 +18,11 @@
 }
 
 @theme {
-  --font-serif: "Noto Serif CJK SC", serif;
+  --font-serif: "Source Han Serif VF", ui-serif, serif;
+  /* 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' */
+  /* --font-semi-serif: "LXGW WenKai"; */
+  --font-sans-serif: "HarmonyOS Sans SC", ui-sans-serif, sans-serif;
+  --font-mono: "Maple Mono NF CN", ui-monospace, monospace;
 }
 
 /*基本样式*/
@@ -33,7 +38,7 @@
   }
 
   body {
-    font-family: sans-serif;
+    font-family: var(--font-sans-serif);
     /*line-height: 1.6;*/
     /*color: #333;*/
     /*background-color: #f9f9f9;*/
@@ -54,7 +59,7 @@
     margin: 1rem 0;
     /* color: var(--primary-color); */
     font-weight: bold;
-    font-family: "Noto Serif CJK SC";
+    font-family: var(--font-serif);
     /*margin: 0.9rem 0;*/
     /*color: white;*/
     /*padding: 0px 12px;*/
@@ -163,7 +168,7 @@
     font-size: 90%;
     padding: 2px 4px;
     border-radius: 4px;
-    font-family: monospace;
+    font-family: var(--font-mono);
     background-color: var(--bg-color);
   }
 
@@ -230,14 +235,9 @@
   font-size: 2rem;
   text-align: center;
   /* color: var(--primary-color); */
-  font-family: "Noto Serif CJK SC";
+  font-family: var(--font-serif);
   /*margin-bottom: 20px;*/
   /*padding: 0px;*/
-  font-weight: bold;
-}
-
-.test {
-  font-family: "Noto Serif CJK SC";
   font-weight: bold;
 }
 
@@ -330,7 +330,7 @@
 
 .meta {
   color: #666;
-  font-family: monospace;
+  font-family: var(--font-mono);
 }
 
 /* icon  */

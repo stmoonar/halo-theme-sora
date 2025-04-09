@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- <html th:fragment="html"> -->
+<!-- <html lang="zh-CN" th:fragment="html"> -->
 <head th:fragment="head(title)">
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,6 +17,29 @@
   <!--   rel="stylesheet" -->
   <!--   th:href="@{/assets/dist/main.css(v=${#strings.randomAlphanumeric(10)})}" -->
   <!-- /> -->
+  <!-- fonts -->
+  <link
+    rel="stylesheet"
+    th:href="@{/assets/fonts/HarmonyOS_Sans_SC/main.css(v=${theme.spec.version})}"
+  />
+  <link rel="preconnect" href="https://fontsapi.zeoseven.com" crossorigin />
+  <link
+    rel="stylesheet"
+    href="https://fontsapi.zeoseven.com/292/main/result.css"
+    onerror="this.href='https://fontsapi-storage.zeoseven.com/292/main/result.css'"
+  />
+  <link rel="preconnect" href="https://fontsapi.zeoseven.com" crossorigin />
+  <link
+    rel="stylesheet"
+    href="https://fontsapi.zeoseven.com/48/main/result.css"
+    onerror="this.href='https://fontsapi-storage.zeoseven.com/48/main/result.css'"
+  />
+  <link rel="preconnect" href="https://fontsapi.zeoseven.com" crossorigin />
+  <link
+    rel="stylesheet"
+    href="https://fontsapi.zeoseven.com/442/main/result.css"
+    onerror="this.href='https://fontsapi-storage.zeoseven.com/442/main/result.css'"
+  />
 
   <script
     th:src="@{/assets/dist/main.iife.js(v=${theme.spec.version})}"
