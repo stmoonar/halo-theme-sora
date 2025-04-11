@@ -3,11 +3,12 @@
 /* @import "./HarmonyOS_Sans_SC/main.css"; */
 
 :root {
-  /* --text-color: #40464f; */
-  --text-color: #212121;
-  /* --secendary-text-color: #777; */
-  /*--bg-color: #f6f8fa;*/
-  --bg-color: #f4f4f4;
+  /* --color-text: #40464f; */
+  /* --color-text: #5f6368; */
+  --color-text: #383a42;
+  /* --color-bg: #f6f8fa; */
+  --color-bg: #f9f9f9;
+  --color-bg2: #f4f4f4;
   --shadow-color: #e3e8f0;
 }
 
@@ -83,8 +84,8 @@
   body {
     font-family: var(--font-sans-serif);
     /*line-height: 1.6;*/
-    /*color: #333;*/
-    /*background-color: #f9f9f9;*/
+    /* color: #222; */
+    /* background-color: #f9f9f9; */
     padding: 0 32px;
   }
 
@@ -185,10 +186,11 @@
 
   /* 引用 */
   blockquote {
-    color: var(--text-color);
-    background-color: var(--bg-color);
+    color: var(--color-text);
+    background-color: var(--color-bg);
     /*font-size: 0.8em;*/
     border-left: 4px solid var(--color-primary);
+    border-radius: 0 8px 8px 0;
     margin: 1rem 0;
     padding: 0.1rem 0.5rem 0.1rem 1.2rem;
   }
@@ -200,24 +202,26 @@
 
   /* 代码块 */
   code {
-    font-size: 90%;
+    font-size: 85%;
     padding: 2px 4px;
-    border-radius: 4px;
+    /* padding: 0.2rem 0.4rem; */
+    border-radius: 6px;
     font-family: var(--font-mono);
-    background-color: var(--bg-color);
+    background-color: var(--color-bg2);
   }
 
   pre {
-    background-color: #272822;
-    color: #f8f8f2;
-    padding: 14px;
+    /* color: var(--color-text); */
+    /* background-color: var(--color-bg); */
+    padding: 8px;
     border-radius: 8px;
-    overflow-x: auto;
+    /* overflow-x: auto; */
+    white-space: pre-wrap;
   }
 
-  pre > code {
+  /* pre > code {
     background-color: inherit;
-  }
+  } */
 
   /* 图片 */
   img {
@@ -225,7 +229,7 @@
     border-radius: 8px;
     margin: 0.5rem 0;
     /*filter: drop-shadow(var(--shadow-color) 0px 6px 6px);*/
-    filter: drop-shadow(var(--text-color) 0px 6px 6px);
+    filter: drop-shadow(var(--color-text) 0px 6px 6px);
   }
 
   /*表格*/
@@ -280,7 +284,7 @@
   display: block;
   cursor: pointer;
   background: #fff;
-  background: var(--bg-color);
+  background: var(--color-bg);
   border-radius: 0.25em;
   /*border-radius: var(--radius);*/
   border: 1px solid #eee;
@@ -311,7 +315,7 @@
 /*导航栏*/
 
 #navigation a {
-  color: var(--text-color);
+  color: black;
   font-weight: bold;
 }
 
