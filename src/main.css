@@ -3,13 +3,7 @@
 /* @import "./HarmonyOS_Sans_SC/main.css"; */
 
 :root {
-  /* --primary-color: #6b4992; */
-  /* --primary-color2: #9b6cb7; */
-  /* --primary-color3: #c2a3d7; */
-  --primary-color: #4870ac;
-  --primary-color2: #385684;
-  --primary-color3: #7fa5e3;
-  /*--text-color: #40464f;*/
+  /* --text-color: #40464f; */
   --text-color: #212121;
   /* --secendary-text-color: #777; */
   /*--bg-color: #f6f8fa;*/
@@ -23,6 +17,55 @@
   /* --font-semi-serif: "LXGW WenKai"; */
   --font-sans-serif: "HarmonyOS Sans SC", ui-sans-serif, sans-serif;
   --font-mono: "Maple Mono NF CN", ui-monospace, monospace;
+
+  /* --color-primary-50: #faf8fc;
+  --color-primary-100: #f4eff8;
+  --color-primary-200: #ece1f3;
+  --color-primary-300: #dcc9e9;
+  --color-primary-400: #c5a7d9;
+  --color-primary-500: #ae84c8;
+  --color-primary-600: #9b6cb7;
+  --color-primary-700: #82549c;
+  --color-primary-800: #6d4881;
+  --color-primary-900: #593b68;
+  --color-primary-950: #3c2249; */
+
+  /* --color-primary-50: #eff6ff;
+  --color-primary-100: #dbeafe;
+  --color-primary-200: #c0dbfd;
+  --color-primary-300: #94c5fc;
+  --color-primary-400: #62a5f8;
+  --color-primary-500: #4285f4;
+  --color-primary-600: #2763e9;
+  --color-primary-700: #1f4ed6;
+  --color-primary-800: #2041ad;
+  --color-primary-900: #1f3b89;
+  --color-primary-950: #182553; */
+
+  /* --color-primary-50: #f2f5fc;
+  --color-primary-100: #e1e9f8;
+  --color-primary-200: #c9d9f4;
+  --color-primary-300: #a4c1ec;
+  --color-primary-400: #7fa5e3;
+  --color-primary-500: #5980d8;
+  --color-primary-600: #4466cc;
+  --color-primary-700: #3b53ba;
+  --color-primary-800: #354598;
+  --color-primary-900: #2f3d79;
+  --color-primary-950: #21274a; */
+
+  --color-primary-50: #f4f6fb;
+  --color-primary-100: #e8ecf6;
+  --color-primary-200: #ccd7eb;
+  --color-primary-300: #9fb6da;
+  --color-primary-400: #6c90c4;
+  --color-primary-500: #4870ac;
+  --color-primary-600: #375992;
+  --color-primary-700: #2d4877;
+  --color-primary-800: #293e63;
+  --color-primary-900: #263654;
+  --color-primary-950: #192338;
+  --color-primary: var(--color-primary-500);
 }
 
 /*基本样式*/
@@ -57,7 +100,7 @@
   h3,
   h4 {
     margin: 1rem 0;
-    /* color: var(--primary-color); */
+    /* color: var(--color-primary); */
     font-weight: bold;
     font-family: var(--font-serif);
     /*margin: 0.9rem 0;*/
@@ -132,19 +175,18 @@
   }
 
   /* li::marker {
-    color: var(--primary-color);
+    color: var(--color-primary);
     font-weight: bold;
   } */
 
   /* 链接 */
   a {
-    color: var(--primary-color);
-    text-decoration: underline;
+    color: var(--color-primary);
+    /* text-decoration: underline; */
   }
 
   a:hover {
     /* text-decoration: underline; */
-    /* color: var(--primary-color2); */
     color: #ba3329;
   }
 
@@ -153,7 +195,7 @@
     color: var(--text-color);
     background-color: var(--bg-color);
     /*font-size: 0.8em;*/
-    border-left: 4px solid var(--primary-color);
+    border-left: 4px solid var(--color-primary);
     margin: 1rem 0;
     padding: 0.1rem 0.5rem 0.1rem 1.2rem;
   }
@@ -227,7 +269,7 @@
   ::-webkit-scrollbar-thumb {
     border-radius: 8px;
     /*background-color: rgba(179, 179, 179, 0.425);*/
-    background-color: var(--primary-color3);
+    background-color: var(--color-primary3);
   }
 }
 
@@ -319,7 +361,7 @@
   /* margin: 0 10px; */
   font-size: 1rem;
   /* color: whitesmoke; */
-  /* background-color: var(--primary-color3); */
+  /* background-color: var(--color-primary3); */
   color: black;
   background-color: whitesmoke;
   border-radius: 8px;
