@@ -31,3 +31,17 @@ document.addEventListener("DOMContentLoaded", function () {
     link.setAttribute("rel", "noopener");
   });
 });
+
+// 字数统计 + 预计阅读时间
+document.addEventListener("DOMContentLoaded", function () {
+  // 获取指定的元素
+  const element = document.querySelector("#post-content");
+  // 计算字数
+  const textLength = element.textContent.length;
+  // 将字数显示在 HTML 中
+  document.getElementById("post-wordcount").textContent = textLength;
+
+  //
+  document.getElementById("post-readtime").textContent =
+    `${Math.round(textLength / 350)}~${Math.round(textLength / 250)} min`;
+});
