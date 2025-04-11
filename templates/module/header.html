@@ -1,17 +1,20 @@
 <!doctype html>
 <header>
-  <nav class="navigation flex font-serif">
-    <a class="nav-homepage" href="/" th:text="${site.title}"></a>
-    <div class="flex flex-row gap-5">
-      <a class="nav-link" href="/archives">归档</a>
-      <a class="nav-link" href="/categories">分类</a>
-      <a class="nav-link" href="/tags">标签</a>
-      <a class="nav-link" href="/about">关于</a>
+  <nav
+    class="mb-[32px] flex border-b border-[#ddd] py-[14px] font-mono"
+    id="navigation"
+  >
+    <a href="/" th:text="${site.title}"></a>
+    <div class="ml-auto flex flex-row gap-5">
+      <a href="/archives">归档</a>
+      <a href="/categories">分类</a>
+      <a href="/tags">标签</a>
+      <a href="/about">关于</a>
       <span> | </span>
-      <a class="nav-link" href="javascript:SearchWidget.open()">
-        <span class="iconify icon-[fa-solid--search]"></span>
+      <a href="javascript:SearchWidget.open()">
+        <span class="icon-[fa-solid--search] iconify-inline"></span>
       </a>
-      <a class="nav-link" href="/en">EN</a>
+      <a href="/en">EN</a>
     </div>
   </nav>
 </header>

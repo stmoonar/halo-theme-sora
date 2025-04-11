@@ -8,14 +8,13 @@
   <body>
     <header th:replace="~{module/header}"></header>
 
-    <!-- <section class="post-archive"> -->
     <div class="mx-auto max-w-[780px]" th:each="archive : ${archives}">
       <h2 th:text="${archive.year}"></h2>
       <th:block th:each="month : ${archive.months}">
-        <th:block class="post-item" th:each="post : ${month.posts}">
-          <div class="meta mb-2 ml-4">
+        <th:block th:each="post : ${month.posts}">
+          <div class="mb-2 ml-4">
             <time
-              class="mr-4"
+              class="mr-4 font-mono text-[#666]"
               th:datetime="${post.spec?.publishTime}"
               itemprop="datePublished"
               th:text="${#dates.format(post.spec.publishTime, 'yyyy-MM-dd')}"
@@ -32,7 +31,6 @@
       </th:block>
       <!-- <div class="mb-3"></div> -->
     </div>
-    <!-- </section> -->
 
     <th:block
       th:replace="~{module/pagination :: pagination(component=${archives})}"

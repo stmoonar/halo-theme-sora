@@ -103,13 +103,6 @@
     /* color: var(--color-primary); */
     font-weight: bold;
     font-family: var(--font-serif);
-    /*margin: 0.9rem 0;*/
-    /*color: white;*/
-    /*padding: 0px 12px;*/
-    /*border-radius: 8px;*/
-    /*background-color: var(--primary-color);*/
-    /*width: fit-content;*/
-
     padding-bottom: 8px;
     border-bottom: 1px solid #f2f3f4;
   }
@@ -273,16 +266,6 @@
   }
 }
 
-.post-title {
-  font-size: 2rem;
-  text-align: center;
-  /* color: var(--primary-color); */
-  font-family: var(--font-serif);
-  /*margin-bottom: 20px;*/
-  /*padding: 0px;*/
-  font-weight: bold;
-}
-
 /*top button*/
 
 .buttons {
@@ -327,24 +310,9 @@
 
 /*导航栏*/
 
-.navigation {
-  border-bottom: 1px solid #ddd;
-  padding: 14px 0;
-  margin-bottom: 32px;
-}
-
-.navigation a {
+#navigation a {
   color: var(--text-color);
   font-weight: bold;
-  text-decoration: none;
-}
-
-.navigation > div > a {
-  /* padding: 14px 12px; */
-}
-
-.navigation > div {
-  margin-left: auto;
 }
 
 /* @media screen and (max-width: 768px) {
@@ -368,22 +336,11 @@
   text-decoration: none;
 }
 
-/* archives */
-
-.meta {
-  color: #666;
-  font-family: var(--font-mono);
-}
-
 /* icon  */
 /* iconify 样式 */
-
-/* iconify-inline */
-.iconify {
+.iconify-inline {
   vertical-align: -0.125rem;
   /* vertical-align: middle; */
-  width: 1rem;
-  height: 1rem;
 }
 
 .iconify-middle {
