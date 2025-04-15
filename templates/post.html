@@ -5,7 +5,7 @@
   <body>
     <header th:replace="~{module/header}"></header>
 
-    <article>
+    <article class="mx-auto w-full max-w-[600px] lg:max-w-[800px]">
       <div
         class="text-center font-serif text-[2rem] font-bold"
         th:text="${post.spec.title}"
@@ -86,9 +86,22 @@
         </span>
       </div>
 
-      <div id="post-content" th:utext="${post.content.content}"></div>
+      <section class="relative">
+        <div id="post-content" th:utext="${post.content.content}"></div>
 
-      <div th:if="${haloCommentEnabled}">
+        <!-- 目录  -->
+        <aside
+          class="absolute top-0 right-[-140px] hidden h-full w-[100px] md:block"
+        >
+          <!-- <div class="mt-[1rem]"># 目录</div> -->
+          <nav
+            class="sticky top-10 pl-4 font-serif text-[.8rem]"
+            id="toc"
+          ></nav>
+        </aside>
+      </section>
+
+      <div class="mt-20" th:if="${haloCommentEnabled}">
         <halo:comment
           group="content.halo.run"
           kind="Post"
@@ -97,12 +110,20 @@
       </div>
     </article>
 
-    <section>
+    <aside>
       <div class="buttons">
         <a class="to-top" href="#"></a>
       </div>
-    </section>
+    </aside>
 
     <footer th:replace="~{module/footer}"></footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        main.generateTOC();
+        main.scrollHighlightTOC();
+        main.clickHighlightTOC();
+      });
+    </script>
   </body>
 </html>

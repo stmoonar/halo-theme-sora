@@ -81,6 +81,11 @@
     font-size: 16px;
   }
 
+  html {
+    /* Enable smooth scrolling */
+    scroll-behavior: smooth;
+  }
+
   body {
     font-family: var(--font-sans-serif);
     /*line-height: 1.6;*/
@@ -443,3 +448,44 @@
 /*     0 2px 30px #00000014, */
 /*     0 0 1px #0000004d; */
 /* } */
+
+/* 目录 */
+#toc a {
+  /* color: #666; */
+  color: black;
+  opacity: 0.6;
+  transition: all 200ms ease-in-out;
+  /* 💡 This small transition makes setting of the active state smooth */
+}
+#toc a:hover {
+  /* color: #333; */
+  opacity: 0.9;
+}
+#toc .active > a {
+  /* color: black; */
+  opacity: 1;
+  font-weight: 600;
+}
+#toc .active {
+  /* color: black; */
+  border-left-color: var(--color-primary);
+  border-start-end-radius: 0.5rem;
+  transition: all 200ms ease-in-out;
+}
+
+#toc > div {
+  padding: 0.2rem 0;
+  border-left: 3px solid #efefef;
+}
+#toc .toc-item-level-1 {
+  padding-left: 12px;
+}
+#toc .toc-item-level-2 {
+  padding-left: calc(12px + 1rem);
+}
+#toc .toc-item-level-3 {
+  padding-left: calc(12px + 2rem);
+}
+#toc .toc-item-level-4 {
+  padding-left: calc(12px + 3rem);
+}

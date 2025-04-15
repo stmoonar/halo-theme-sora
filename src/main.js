@@ -1,7 +1,7 @@
 import "./main.css";
 //import "./test/lapis.css";
 
-import "./mian.js";
+export * from "./TOC.js";
 
 var to_top = function () {
   var btn = document.getElementsByClassName("to-top")[0];
