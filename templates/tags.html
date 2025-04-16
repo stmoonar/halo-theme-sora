@@ -1,24 +1,23 @@
-<!DOCTYPE html>
-<html xmlns:th="https://www.thymeleaf.org"
-    th:replace="~{module/macro :: html(title = '标签列表' + ${site.title}, head = null, content = ~{::content})}">
+<!doctype html>
+<html lang="zh-CN" xmlns:th="https://www.thymeleaf.org">
+  <head th:replace="~{module/head(title = '标签' + ' | ' + ${site.title})}">
+  </head>
 
-    <th:block th:fragment="content">
+  <body>
+    <header th:replace="~{module/header}"></header>
 
-        <main>
-            <div class="wrap min">
-                <section class="page-title">
-                    <h1>标签</h1>
-                </section>
+    <main class="flex gap-4" th:if="${not #lists.isEmpty(tags)}">
+      <span class="index-post-card px-3 py-1" th:each="tag : ${tags}">
+        <span class="icon-[mdi--tag-outline] iconify-inline"></span>
+        <a
+          class="text-black"
+          th:text="${tag.spec.displayName}"
+          th:href="${tag.status.permalink}"
+        ></a>
+        <span th:text="${tag.postCount}"> </span>
+      </span>
+    </main>
 
-                <section class="post-content">
-
-                    <th:block th:if="${not #lists.isEmpty(tags)}">
-                        <li th:each="tag : ${tags}"><a th:text="${tag.spec.displayName}" th:href="${tag.status.permalink}"></a></li>
-                    </th:block>
-                </section>
-            </div>
-        </main>
-
-    </th:block>
-
+    <footer th:replace="~{module/footer}"></footer>
+  </body>
 </html>
