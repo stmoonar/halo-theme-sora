@@ -15,6 +15,8 @@ export default defineConfig({
       fileName: "main",
       formats: ["iife"],
     },
+    // minify: false, // 禁用代码压缩
+    // sourcemap: true,
     /* rollupOptions: {
       output: {
         assetFileNames: "[name].[hash].[ext]",
