@@ -1,12 +1,22 @@
 {
-"types": [
-    {"type": "feat", "section": "✨ Features"},
-    {"type": "fix", "section": "🐞 Bug Fixes"},
-    {"type": "docs", "section": "📝 Docs"},
-    {"type": "style", "section": "🌈 Style"},
-    {"type": "refactor", "section": "Others"},
-    {"type": "chore", "section": "Others"},
-    {"type": "chore(release)", "section": "Others"},
-    {"type": "revert", "section": "Others"}
-]
+  "bumpFiles": [
+    {
+      "filename": "package.json",
+      "type": "json"
+    },
+    {
+      "filename": "theme.yaml",
+      "updater": "commit-and-tag-version-updater.js"
+    }
+  ],
+  "types": [
+    { "type": "feat", "section": "✨ Features" },
+    { "type": "fix", "section": "🐞 Bug Fixes" },
+    { "type": "docs", "hidden": true },
+    { "type": "style", "section": "🌈 Style" },
+    { "type": "refactor", "section": "Others" },
+    { "type": "chore", "scope": "release", "hidden": true },
+    { "type": "chore", "section": "Others" },
+    { "type": "revert", "section": "Others" }
+  ]
 }
