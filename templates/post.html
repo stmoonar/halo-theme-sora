@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="zh-CN" xmlns:th="https://www.thymeleaf.org">
-  <head th:replace="~{module/layout :: head(null)}"> </head>
+  <head
+    th:replace="~{module/head(title = ${post.spec.title} + ' | ' + ${site.title})}"
+  >
+  </head>
 
   <body>
     <header th:replace="~{module/header}"></header>

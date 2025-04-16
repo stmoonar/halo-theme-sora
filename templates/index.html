@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="zh-CN" xmlns:th="https://www.thymeleaf.org">
-  <head th:replace="~{module/layout :: head(title=${site.title})}"> </head>
+  <head th:replace="~{module/head(title = ${site.title})}"> </head>
 
   <body>
     <header>
@@ -32,7 +32,7 @@
       </div>
     </header>
 
-    <section class="mx-auto max-w-[768px]">
+    <main th:fragment="postList" class="mx-auto max-w-[768px]">
       <!-- <div class="mb-6 ml-4 text-2xl">Recent Posts</div> -->
 
       <div class="flex flex-col gap-5">
@@ -97,12 +97,11 @@
           </div>
         </a>
       </div>
-    </section>
 
-    <th:block
-      th:replace="~{module/pagination :: pagination(component=${posts})}"
-    >
-    </th:block>
+      <th:block
+        th:replace="~{module/pagination(component=${posts})}"
+      ></th:block>
+    </main>
 
     <footer th:replace="~{module/footer}"></footer>
   </body>
