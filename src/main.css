@@ -13,7 +13,7 @@
 }
 
 @theme {
-  --font-serif: "Source Han Serif VF", ui-serif, serif;
+  --font-serif: "Noto Serif SC", ui-serif, serif;
   /* 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' */
   /* --font-semi-serif: "LXGW WenKai"; */
   --font-sans-serif: "HarmonyOS Sans SC", ui-sans-serif, sans-serif;
