@@ -67,6 +67,8 @@
   --color-primary-900: #263654;
   --color-primary-950: #192338;
   --color-primary: var(--color-primary-500);
+
+  --breakpoint-sm: 480px;
 }
 
 /*基本样式*/
@@ -88,16 +90,9 @@
 
   body {
     font-family: var(--font-sans-serif);
-    /*line-height: 1.6;*/
     /* color: #222; */
     /* background-color: #f9f9f9; */
     padding: 0 32px;
-  }
-
-  article {
-    margin: 0 auto;
-    max-width: 850px;
-    width: 100%;
   }
 
   /* 标题 */
@@ -146,7 +141,7 @@
     font-size: 1rem;
     margin: 1rem 0;
     /*text-align: justify;*/
-    line-height: 1.6;
+    line-height: 1.8;
   }
 
   /* 列表 */
@@ -279,7 +274,7 @@
   ::-webkit-scrollbar-thumb {
     border-radius: 8px;
     /*background-color: rgba(179, 179, 179, 0.425);*/
-    background-color: var(--color-primary3);
+    background-color: var(--color-primary-300);
   }
 }
 
@@ -377,22 +372,10 @@
 
 /* 页码导航 */
 
-.pagination {
-  margin-top: 1rem;
-  text-align: center;
-  /* display: flex; */
-  /* align-items: center; */
-}
-
-.pagination .page-number,
 .pagination a {
   color: #333;
   /* font-size: 0.9375rem; */
-}
-
-.pagination a {
   /* font-size: 1.2rem; */
-  text-decoration: none;
 }
 
 /* 首页文章卡片 */
