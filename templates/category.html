@@ -8,9 +8,15 @@
   <body>
     <header th:replace="~{module/header}"></header>
 
+    <div class="text-center font-serif text-2xl font-bold">
+      <span
+        class="icon-[material-symbols--folder-outline-rounded] iconify-inline"
+      ></span>
+      <span th:text="${category.spec.displayName}"></span>
+    </div>
+
     <main th:replace="~{index :: postList}"></main>
 
     <footer th:replace="~{module/footer}"></footer>
   </body>
 </html>
-
