@@ -30,9 +30,7 @@
       <!-- <div class="mb-3"></div> -->
     </div>
 
-    <th:block
-      th:replace="~{module/pagination :: pagination(component=${archives})}"
-    >
+    <th:block th:replace="~{module/pagination(component=${archives})}">
     </th:block>
 
     <footer th:replace="~{module/footer}"></footer>
