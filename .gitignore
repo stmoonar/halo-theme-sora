@@ -22,3 +22,4 @@ node_modules
 *.sw?
 
 README_bak.md
+templates/assets/dist
