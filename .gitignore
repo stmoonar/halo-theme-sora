@@ -21,5 +21,4 @@ node_modules
 *.sln
 *.sw?
 
-README_bak.md
 templates/assets/dist
