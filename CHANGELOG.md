@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.2.2](https://github.com/Liksone/halo-theme-sora/compare/v0.2.1...v0.2.2) (2025-04-17)
+
+
+### Others
+
+* 添加自动发布流程 ([795254f](https://github.com/Liksone/halo-theme-sora/commit/795254f4a35060d101e339cfffd2609868584af2))
+
 ## [0.2.1](https://github.com/Liksone/halo-theme-sora/compare/v0.2.0...v0.2.1) (2025-04-17)
 
 
