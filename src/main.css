@@ -9,7 +9,7 @@
   /* --color-bg: #f6f8fa; */
   --color-bg: #f9f9f9;
   --color-bg2: #f4f4f4;
-  --shadow-color: #e3e8f0;
+  --color-shadow: #e3e8f0;
 }
 
 @theme {
@@ -55,18 +55,31 @@
   --color-primary-900: #2f3d79;
   --color-primary-950: #21274a; */
 
-  --color-primary-50: #f4f6fb;
-  --color-primary-100: #e8ecf6;
-  --color-primary-200: #ccd7eb;
-  --color-primary-300: #9fb6da;
-  --color-primary-400: #6c90c4;
-  --color-primary-500: #4870ac;
-  --color-primary-600: #375992;
-  --color-primary-700: #2d4877;
-  --color-primary-800: #293e63;
-  --color-primary-900: #263654;
-  --color-primary-950: #192338;
-  --color-primary: var(--color-primary-500);
+  /* --color-secondary-50: #f4f6fb;
+  --color-secondary-100: #e8ecf6;
+  --color-secondary-200: #ccd7eb;
+  --color-secondary-300: #9fb6da;
+  --color-secondary-400: #6c90c4;
+  --color-secondary-500: #4870ac;
+  --color-secondary-600: #375992;
+  --color-secondary-700: #2d4877;
+  --color-secondary-800: #293e63;
+  --color-secondary-900: #263654;
+  --color-secondary-950: #192338; */
+
+  --color-primary-50: #fff0fc;
+  --color-primary-100: #ffe3fc;
+  --color-primary-200: #ffc7f9;
+  --color-primary-300: #ff99f2;
+  --color-primary-400: #ff5ae7;
+  --color-primary-500: #ff2ad6;
+  --color-primary-600: #fc06ba;
+  --color-primary-700: #dc0097;
+  --color-primary-800: #b5007c;
+  --color-primary-900: #82045b;
+  --color-primary-950: #5d003c;
+
+  --color-primary: var(--color-primary-900);
 
   --breakpoint-sm: 480px;
 }
@@ -188,8 +201,9 @@
   }
 
   a:hover {
-    /* text-decoration: underline; */
-    color: #ba3329;
+    text-decoration: underline;
+    /* color: #ba3329; */
+    /* color: var(--color-primary-800); */
   }
 
   /* 引用 */
@@ -273,8 +287,9 @@
 
   ::-webkit-scrollbar-thumb {
     border-radius: 8px;
-    /*background-color: rgba(179, 179, 179, 0.425);*/
-    background-color: var(--color-primary-300);
+    /* background-color: rgba(179, 179, 179, 0.425); */
+    background-color: var(--color-gray-300);
+    /* background-color: var(--color-primary-800); */
   }
 }
 
