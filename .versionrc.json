@@ -14,9 +14,9 @@
     { "type": "fix", "section": "🐞 Bug Fixes" },
     { "type": "docs", "hidden": true },
     { "type": "style", "section": "🌈 Style" },
-    { "type": "refactor", "section": "Others" },
+    { "type": "refactor", "section": "🔨 Others" },
     { "type": "chore", "scope": "release", "hidden": true },
-    { "type": "chore", "section": "Others" },
-    { "type": "revert", "section": "Others" }
+    { "type": "chore", "section": "🔨 Others" },
+    { "type": "revert", "section": "🔨 Others" }
   ]
 }
