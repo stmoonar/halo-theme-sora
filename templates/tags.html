@@ -6,7 +6,7 @@
   <body>
     <header th:replace="~{module/header}"></header>
 
-    <main class="flex gap-4" th:if="${not #lists.isEmpty(tags)}">
+    <main class="flex flex-wrap gap-4" th:if="${not #lists.isEmpty(tags)}">
       <span class="index-post-card px-3 py-1" th:each="tag : ${tags}">
         <span class="icon-[mdi--tag-outline] iconify-inline"></span>
         <a

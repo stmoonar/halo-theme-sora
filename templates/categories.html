@@ -6,7 +6,10 @@
   <body>
     <header th:replace="~{module/header}"></header>
 
-    <main class="flex gap-4" th:if="${not #lists.isEmpty(categories)}">
+    <main
+      class="flex flex-wrap gap-4"
+      th:if="${not #lists.isEmpty(categories)}"
+    >
       <span
         class="index-post-card px-3 py-1"
         th:each="category : ${categories}"
@@ -26,4 +29,3 @@
     <footer th:replace="~{module/footer}"></footer>
   </body>
 </html>
-
