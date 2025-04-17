@@ -1,0 +1,84 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  package:
+    name: Package Theme
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: "10"
+      - name: Install dependencies
+        run: pnpm install
+      - name: Build
+        run: pnpm package
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: package
+          path: dist
+
+  github-release:
+    name: Github Release
+    runs-on: ubuntu-latest
+    needs: package
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Download Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: package
+          path: dist
+      - name: Extract release notes
+        run: awk '/^#+ \[/ {
+          if (p) { exit };
+          if ($2 != "[Unreleased]") { p=1 }
+          }
+          p' CHANGELOG.md > release-notes.md
+      - name: Create GitHub release
+        uses: ncipollo/release-action@v1
+        with:
+          bodyFile: "release-notes.md"
+          artifacts: "dist/*"
+
+  appstore-release:
+    name: Halo App Store Release
+    needs: github-release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: package
+          path: dist
+      - name: Get Latest Release ID
+        id: get_release_id
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          RELEASE_ID=$(gh release view --json databaseId --jq '.databaseId')
+          # echo "Latest Release ID: $RELEASE_ID"
+          echo "RELEASE_ID=$RELEASE_ID" >> $GITHUB_OUTPUT
+      - name: Release to Halo App Store
+        uses: halo-sigs/app-store-release-action@v3
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          app-id: app-SBuSB
+          release-id: ${{ steps.get_release_id.outputs.RELEASE_ID }}
+          assets-dir: dist
+          halo-pat: ${{ secrets.HALO_PAT }}

@@ -7,7 +7,8 @@
   "license": "",
   "scripts": {
     "dev": "vite build --watch & pnpm run bs",
-    "build": "vite build && npx @halo-dev/theme-package-cli",
+    "build": "vite build",
+    "package": "vite build && pnpx @halo-dev/theme-package-cli",
     "preview": "vite preview",
     "bs": "browser-sync start --config bs-config.cjs",
     "version": "commit-and-tag-version"
