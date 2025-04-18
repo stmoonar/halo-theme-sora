@@ -7,14 +7,14 @@ spec:
   author:
     name: Liks
     website: https://blog.liks.space
-  description: 一个简约主题
+  description: 一款简约的个人博客主题
   homepage: https://github.com/Liksone/halo-theme-sora
-  repo: https://github.com/Liksone/halo-theme-sora
+  repo: https://github.com/Liksone/halo-theme-sora.git
   issues: https://github.com/Liksone/halo-theme-sora/issues
   settingName: theme-sora-setting
   configMapName: theme-sora-configmap
   version: 0.2.3
-  requires: '>=2.20.0'
+  requires: ">=2.20.0"
   license:
     - name: GPLv3
       url: https://github.com/Liksone/halo-theme-sora/blob/main/LICENSE
