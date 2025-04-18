@@ -11,41 +11,63 @@ spec:
           name: avatar
           label: 头像
     - group: social
-      label: 社交链接
+      label: 社交媒体
       formSchema:
         - $formkit: repeater
-          name: social_media
+          name: socials
           label: 社交媒体
           value: []
           children:
             - $formkit: select
-              name: social_type
-              label: 类型
-              options:
-                - label: 电子邮箱
-                  value: email
-                - label: 腾讯 QQ
-                  value: qq
-                - label: 新浪微博
-                  value: weibo
-                - label: Telegram
-                  value: telegram
-                - label: Facebook
-                  value: facebook
-                - label: Instagram
-                  value: instagram
-                - label: Twitter
-                  value: twitter
-                - label: GitHub
-                  value: github
-                - label: Gitee
-                  value: gitee
-            - $formkit: text
               name: name
               label: 名称
+              clearable: true
+              searchable: true
+              validation: "required"
+              options:
+                - label: BiliBili
+                  value: bilibili
+                  # value: { name: "bilibili", icon: "mingcute--bilibili-line" }
+                - label: Email
+                  value: email
+                  # value:
+                  #   {
+                  #     name: "email",
+                  #     icon: "material-symbols--mail-outline-rounded",
+                  #   }
+                - label: Facebook
+                  value: facebook
+                  # value: { name: "facebook", icon: "mingcute--facebook-fill" }
+                - label: GitHub
+                  value: github
+                  # value: { name: "github", icon: "mdi--github" }
+                - label: Instagram
+                  value: instagram
+                  # value: { name: "instagram", icon: "mdi--instagram" }
+                - label: QQ
+                  value: qq
+                  # value: { name: "qq", icon: "mingcute--qq-line" }
+                - label: Telegram
+                  value: telegram
+                  # value: { name: "telegram", icon: "ic--baseline-telegram" }
+                - label: Twitter/X
+                  value: twitter
+                  # value: { name: "twitter", icon: "si--twitter-line" }
+                - label: YouTube
+                  value: youtube
+                  # value: { name: "youtube", icon: "mingcute--youtube-line" }
+                - label: 微博
+                  value: weibo
+                  # value: { name: "weibo", icon: "ri--weibo-fill" }
+                - label: 小红书
+                  value: xiaohongshu
+                  # value: { name: "xiaohongshu", icon: "simple-icons--xiaohongshu" }
+                - label: 知乎
+                  value: zhihu
+                  # value: { name: "zhihu", icon: "ri--zhihu-fill" }
             - $formkit: text
               name: url
-              label: 账号/地址
+              label: 地址
               validation: "required"
         - $formkit: radio
           name: RSS
