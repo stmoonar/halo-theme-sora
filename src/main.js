@@ -47,6 +47,13 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("post-wordcount").textContent = textLength;
 
   //
-  document.getElementById("post-readtime").textContent =
-    `${Math.round(textLength / 350)}~${Math.round(textLength / 250)} min`;
+  document.getElementById("post-readtime").textContent = (function () {
+    const min = Math.round(textLength / 350);
+    const max = Math.round(textLength / 250);
+    if (min == max) {
+      return `${max} min`;
+    } else {
+      return `${min}~${max} min`;
+    }
+  })();
 });
