@@ -48,6 +48,14 @@
             <!--     th:attr="data-icon=${item?.type['icon']}" -->
             <!--   ></i> -->
             <!-- </a> -->
+
+            <a
+              class="text-black no-underline"
+              th:if="${theme.config.genernal.rss == 1}"
+              href="/rss.xml"
+            >
+              <span class="iconify-large icon-[heroicons--rss]"></span>
+            </a>
           </div>
 
           <!-- 导航栏 -->

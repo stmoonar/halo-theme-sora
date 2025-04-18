@@ -10,6 +10,15 @@ spec:
         - $formkit: attachment
           name: avatar
           label: 头像
+        - $formkit: radio
+          name: rss
+          label: RSS
+          value: 1
+          options:
+            - label: 开启
+              value: 1
+            - label: 关闭
+              value: 0
     - group: social
       label: 社交媒体
       formSchema:
@@ -69,12 +78,3 @@ spec:
               name: url
               label: 地址
               validation: "required"
-        - $formkit: radio
-          name: RSS
-          label: RSS
-          value: 1
-          options:
-            - label: 开启
-              value: 1
-            - label: 关闭
-              value: 0
