@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.3.0](https://github.com/Liksone/halo-theme-sora/compare/v0.2.3...v0.3.0) (2025-04-18)
+
+
+### ✨ Features
+
+* 添加 RSS 设置 ([ee1dd63](https://github.com/Liksone/halo-theme-sora/commit/ee1dd637f86f0040e7c184e53c1e9424932f964b))
+* 添加社交媒体设置 ([df70f58](https://github.com/Liksone/halo-theme-sora/commit/df70f589ac2d412e55c9aacfdafba2e7206c8b92))
+
+
+### 🐞 Bug Fixes
+
+* 修复文章元信息预计阅读时间的范围显示 ([a505fba](https://github.com/Liksone/halo-theme-sora/commit/a505fbae783cdec9b752f590001c58d433e9fb6f))
+
+
+### 🔨 Others
+
+* 修改 theme.yaml ([c3d297b](https://github.com/Liksone/halo-theme-sora/commit/c3d297b13316556e7cab756fa6f4de04e41c6653))
+* 删除冗余 HTML ([3e4ccb5](https://github.com/Liksone/halo-theme-sora/commit/3e4ccb585c2df2a10a2149c5d54e30d9a1a32c8e))
+* 更新依赖 ([1d2db03](https://github.com/Liksone/halo-theme-sora/commit/1d2db03f98dbb2539b419d619258c94b7c65c432))
+
 ## [0.2.3](https://github.com/Liksone/halo-theme-sora/compare/v0.2.2...v0.2.3) (2025-04-17)
 
 
