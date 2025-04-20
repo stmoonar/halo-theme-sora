@@ -298,6 +298,30 @@
   }
 }
 
+@layer components {
+  /* 卡片 */
+  .card {
+    border-width: 1px;
+    border-radius: var(--size-border-radius);
+    border-color: var(--color-gray-light);
+    padding: 1rem;
+    background-color: var(--color-bg);
+    box-shadow: 0 0px 8px var(--color-shadow);
+  }
+
+  .card-small {
+    border-width: 1px;
+    border-radius: var(--size-border-radius);
+    border-color: var(--color-gray-light);
+    padding: 0.4rem 0.5rem;
+    box-shadow: 0 0 4px var(--color-shadow);
+    /* animation: float-in 0.5s 0.05s backwards; */
+    /* transition: all 0.2s; */
+    /* background-color: rgb(from var(--color-primary) r g b / 0.8); */
+    /* color: white; */
+  }
+}
+
 /*top button*/
 
 .buttons {
