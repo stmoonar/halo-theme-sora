@@ -1,6 +1,17 @@
 <footer class="pt-20 pb-6">
   <div class="text-center">
-    <div>© 2024 - [[${#dates.format(#dates.createNow(), 'yyyy')}]] · Liks</div>
+    <div>
+      ©
+      <span
+        th:text="${#strings.isEmpty(theme.config.footer.copyright.time)} ? ${#dates.format(#dates.createNow(), 'yyyy')} : ${theme.config.footer.copyright.time}"
+      >
+      </span>
+      ·
+      <span
+        th:text="${#strings.isEmpty(theme.config.footer.copyright.author)} ? ${site.title} : ${theme.config.footer.copyright.author}"
+      >
+      </span>
+    </div>
     <div>
       Powered by
       <a class="no-underline" href="https://www.halo.run">Halo</a>
@@ -9,15 +20,5 @@
         >Sora</a
       >
     </div>
-
-    <!-- © 2024 - [[${#dates.format(#dates.createNow(), 'yyyy')}]] Liks · Powered by
-    <a href="https://www.halo.run">Halo</a>
-    &
-    <a href="/404">主题</a>
-
-    <p>
-      © [[${#dates.format(#dates.createNow(), 'yyyy')}]] [[${site.title}]]. All
-      rights reserved.
-    </p> -->
   </div>
 </footer>

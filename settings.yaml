@@ -78,3 +78,18 @@ spec:
               name: url
               label: 地址
               validation: "required"
+    - group: footer
+      label: 页脚
+      formSchema:
+        - $formkit: group
+          name: copyright
+          label: 版权
+          children:
+            - $formkit: text
+              name: time
+              label: 建站时间
+              help: "例如 2024 - 2025，默认为今年"
+            - $formkit: text
+              name: author
+              label: 版权所有者
+              help: "默认为站点标题"
