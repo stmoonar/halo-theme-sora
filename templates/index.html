@@ -100,13 +100,13 @@
               th:if="${#strings.isEmpty(post.spec.cover)}"
               th:text="${post.status.excerpt != null and #strings.length(post.status.excerpt) > 150} ? ${#strings.substring(post.status.excerpt, 0, 150)} + '...' : ${post.status.excerpt}"
               style="font-size: 0.9rem"
-              class="text-gray-600"
+              class="text-gray"
             ></div>
             <div
               th:if="${!#strings.isEmpty(post.spec.cover)}"
               th:text="${post.status.excerpt != null and #strings.length(post.status.excerpt) > 80} ? ${#strings.substring(post.status.excerpt, 0, 80)} + '...' : ${post.status.excerpt}"
               style="font-size: 0.9rem"
-              class="text-gray-600"
+              class="text-gray"
             ></div>
 
             <!-- 元信息 -->
@@ -116,7 +116,7 @@
             >
               <time
                 th:text="${#dates.format(post.spec.publishTime, 'yyyy-MM-dd')}"
-                class="text-gray-600"
+                class="text-gray"
               ></time>
               <!-- 分类
             <span

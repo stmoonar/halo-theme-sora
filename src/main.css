@@ -3,13 +3,7 @@
 /* @import "./HarmonyOS_Sans_SC/main.css"; */
 
 :root {
-  /* --color-text: #40464f; */
-  /* --color-text: #5f6368; */
-  --color-text: #383a42;
-  /* --color-bg: #f6f8fa; */
-  --color-bg: #f9f9f9;
   --color-bg2: #f4f4f4;
-  --color-shadow: #e3e8f0;
 }
 
 @theme {
@@ -77,9 +71,20 @@
   --color-primary-700: #dc0097;
   --color-primary-800: #b5007c;
   --color-primary-900: #82045b;
+  /* --color-primary-900: rgb(130, 4, 91); */
   --color-primary-950: #5d003c;
 
   --color-primary: var(--color-primary-900);
+
+  --color-gray-light: var(--color-gray-100);
+  --color-gray: var(--color-neutral-600);
+  --color-gray-dark: var(--color-neutral-700);
+
+  /* --color-text: #5f6368; */
+  /* --color-text: #383a42; */
+  --color-bg: #f9f9f9;
+  --color-shadow: rgba(0, 0, 0, 0.1);
+  --color-border-light: #e7e9ef;
 
   --breakpoint-sm: 480px;
 }
@@ -208,7 +213,7 @@
 
   /* 引用 */
   blockquote {
-    color: var(--color-text);
+    color: var(--color-gray-dark);
     background-color: var(--color-bg);
     /*font-size: 0.8em;*/
     border-left: 4px solid var(--color-primary);
@@ -233,7 +238,7 @@
   }
 
   pre {
-    /* color: var(--color-text); */
+    /* color: var(--color-gray-dark); */
     /* background-color: var(--color-bg); */
     padding: 8px;
     border-radius: 8px;
@@ -250,8 +255,7 @@
     max-width: 100%;
     border-radius: 8px;
     margin: 0.5rem 0;
-    /*filter: drop-shadow(var(--shadow-color) 0px 6px 6px);*/
-    filter: drop-shadow(var(--color-text) 0px 6px 6px);
+    filter: drop-shadow(var(--color-shadow) 0px 6px 6px);
   }
 
   /*表格*/
@@ -399,7 +403,7 @@
   animation: float-in 0.5s 0.05s backwards;
   border-radius: 0.8rem;
   background-color: #fff;
-  box-shadow: 0 0.1em 0.2em #29303d1a;
+  box-shadow: 0 0.1em 0.2em var(--color-shadow);
   transition: all 0.2s;
   position: relative;
 }
