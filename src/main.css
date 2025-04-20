@@ -397,11 +397,9 @@
 /* iconify 样式 */
 .iconify-inline {
   vertical-align: -0.125rem;
-  /* vertical-align: middle; */
 }
 
 .iconify-middle {
-  vertical-align: -0.25rem;
   width: 1.2rem;
   height: 1.2rem;
 }
@@ -412,7 +410,8 @@
 }
 
 .iconify-huge {
-  font-size: 1.8rem;
+  width: 1.8rem;
+  height: 1.8rem;
 }
 
 /* 页码导航 */
