@@ -4,6 +4,7 @@
 
 :root {
   --color-bg2: #f4f4f4;
+  --size-border-radius: 0.5rem;
 }
 
 @theme {

@@ -9,16 +9,22 @@
     <header th:replace="~{module/header}"></header>
 
     <article class="mx-auto w-full max-w-[600px] lg:max-w-[800px]">
+      <!-- 封面图 -->
+      <!-- <img -->
+      <!--   th:if="${!#strings.isEmpty(post.spec.cover)}" -->
+      <!--   th:src="${post.spec.cover}" -->
+      <!--   class="shadow-shadow mx-auto mb-8 h-[10rem] w-full rounded-lg object-contain" -->
+      <!-- /> -->
+
+      <!-- 标题 -->
       <div
         class="text-center font-serif text-[2rem] font-bold"
         th:text="${post.spec.title}"
       ></div>
 
       <!-- 文章元信息 -->
-      <div
-        class="mt-4 mb-8 flex flex-wrap justify-center gap-3 font-mono text-sm"
-      >
-        <!-- 发表时间 -->
+      <div class="mt-4 flex flex-wrap justify-center gap-3 font-mono text-sm">
+        <!-- 发布时间 -->
         <span>
           <span class="icon-[bx--calendar-alt] iconify-inline"></span>
           <time
@@ -52,7 +58,7 @@
           <span>
             <th:block th:each="category : ${post.categories}">
               <a
-                class="text-black"
+                class="text-inherit"
                 th:href="${category.status.permalink}"
                 th:text="${category.spec.displayName}"
               ></a>
@@ -65,7 +71,7 @@
           <span>
             <th:block th:each="tag : ${post.tags}">
               <a
-                class="text-black"
+                class="text-inherit"
                 th:href="${tag.status.permalink}"
                 th:text="${tag.spec.displayName}"
               ></a>
@@ -98,13 +104,13 @@
         >
           <!-- <div class="mt-[1rem]"># 目录</div> -->
           <nav
-            class="sticky top-10 pl-4 font-serif text-[.8rem]"
+            class="sticky top-10 pl-4 font-serif text-[0.8rem]"
             id="toc"
           ></nav>
         </aside>
       </section>
 
-      <div class="mt-20" th:if="${haloCommentEnabled}">
+      <div class="mt-16" th:if="${haloCommentEnabled}">
         <halo:comment
           group="content.halo.run"
           kind="Post"
