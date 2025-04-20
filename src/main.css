@@ -505,14 +505,14 @@
   border-left: 3px solid #efefef;
 }
 #toc .toc-item-level-1 {
-  padding-left: 12px;
+  padding-left: 10px;
 }
 #toc .toc-item-level-2 {
-  padding-left: calc(12px + 1rem);
+  padding-left: calc(10px + 0.6rem);
 }
 #toc .toc-item-level-3 {
-  padding-left: calc(12px + 2rem);
+  padding-left: calc(10px + 1.2rem);
 }
 #toc .toc-item-level-4 {
-  padding-left: calc(12px + 3rem);
+  padding-left: calc(10px + 1.8rem);
 }
