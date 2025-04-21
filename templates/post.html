@@ -159,6 +159,40 @@
               </div>
             </div>
           </div>
+
+          <!-- 末尾分类 & 标签 -->
+          <div
+            th:if="${not #lists.isEmpty(post.categories) or not #lists.isEmpty(post.tags)}"
+            class="flex justify-between text-sm"
+          >
+            <span class="flex gap-2">
+              <th:block th:if="${not #lists.isEmpty(post.categories)}">
+                <a
+                  class="card-small text-inherit no-underline"
+                  th:each="category : ${post.categories}"
+                  th:href="${category.status.permalink}"
+                >
+                  <span
+                    class="icon-[material-symbols--folder-outline-rounded] iconify-inline"
+                  ></span>
+                  <span th:text="${category.spec.displayName}"></span>
+                </a>
+              </th:block>
+            </span>
+
+            <span class="flex gap-2">
+              <th:block th:if="${not #lists.isEmpty(post.tags)}">
+                <a
+                  class="card-small text-inherit no-underline"
+                  th:each="tag : ${post.tags}"
+                  th:href="${tag.status.permalink}"
+                >
+                  <span class="icon-[mdi--tag-outline] iconify-inline"></span>
+                  <span th:text="${tag.spec.displayName}"></span>
+                </a>
+              </th:block>
+            </span>
+          </div>
         </div>
         <!-- 目录  -->
         <aside
