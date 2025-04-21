@@ -98,6 +98,68 @@
       <section class="relative">
         <div id="post-content" th:utext="${post.content.content}"></div>
 
+        <!-- <hr class="my-8 border-t-4 text-black opacity-10" /> -->
+
+        <!-- 版权许可协议 -->
+        <div class="card mt-14 px-6 py-4" id="license">
+          <div id="license-icon"></div>
+
+          <div th:text="${post.spec.title}"></div>
+          <div
+            class="license-item mt-1"
+            th:text="${site.url} + ${post.status.permalink}"
+          ></div>
+
+          <div class="mt-3 mb-4 gap-12 sm:flex">
+            <div>
+              <div class="license-item">作者</div>
+              <span th:text="${post.owner.displayName}"></span>
+            </div>
+
+            <div>
+              <div class="license-item">发布于</div>
+              <time
+                th:text="${#dates.format(post.spec.publishTime, 'yyyy-MM-dd')}"
+              ></time>
+            </div>
+
+            <div>
+              <div class="license-item">更新于</div>
+              <time
+                th:if="${#annotations.get(post, 'updateTime')}"
+                th:text="${post.metadata.annotations.updateTime}"
+              ></time>
+              <time
+                th:unless="${#annotations.get(post, 'updateTime')}"
+                th:text="${#dates.format(post.status.lastModifyTime, 'yyyy-MM-dd')}"
+              ></time>
+            </div>
+
+            <div>
+              <div class="license-item">许可协议</div>
+              <div>
+                <a
+                  href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans"
+                  class="text-inherit no-underline"
+                >
+                  <!-- <img class="h-8" th:src="@{/assets/images/CC-BY-NC-SA.svg}" /> -->
+                  <span
+                    class="icon-[cib--creative-commons] iconify-inline"
+                  ></span>
+                  <span
+                    class="icon-[cib--creative-commons-by] iconify-inline"
+                  ></span>
+                  <span
+                    class="icon-[cib--creative-commons-nc] iconify-inline"
+                  ></span>
+                  <span
+                    class="icon-[cib--creative-commons-sa] iconify-inline"
+                  ></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- 目录  -->
         <aside
           class="absolute top-0 right-[-160px] hidden h-full w-[120px] md:block"
