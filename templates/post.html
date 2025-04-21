@@ -95,6 +95,11 @@
         </span>
       </div>
 
+      <!-- 摘要 -->
+      <!-- <div class="card abstract my-4 text-sm"> -->
+      <!--   <span th:text="${post.status.excerpt}"></span> -->
+      <!-- </div> -->
+
       <section class="relative">
         <div id="post-content" th:utext="${post.content.content}"></div>
 
@@ -194,6 +199,21 @@
             </span>
           </div>
         </div>
+
+        <!-- 赞赏 -->
+        <!-- <div class="my-8 flex justify-center gap-4 text-sm"> -->
+        <!--   <span class="card-small"> -->
+        <!--     <span -->
+        <!--       class="iconify-inline icon-[flowbite--thumbs-up-solid]" -->
+        <!--     ></span> -->
+        <!--     赞 -->
+        <!--   </span> -->
+        <!--   <span class="card-small"> -->
+        <!--     <span class="iconify-inline icon-[ph--coffee-fill]"></span> -->
+        <!--     赏 -->
+        <!--   </span> -->
+        <!-- </div> -->
+
         <!-- 目录  -->
         <aside
           class="absolute top-0 right-[-160px] hidden h-full w-[120px] md:block"
