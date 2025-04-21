@@ -2,6 +2,31 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.4.0](https://github.com/Liksone/halo-theme-sora/compare/v0.3.0...v0.4.0) (2025-04-21)
+
+
+### ✨ Features
+
+* 修改回到顶部按钮样式 ([346c1d9](https://github.com/Liksone/halo-theme-sora/commit/346c1d966e83fce71dc99a4bb9ae638385ab7b2c))
+* **文章页:** 添加文章末尾分类 & 标签显示 ([432ceab](https://github.com/Liksone/halo-theme-sora/commit/432ceaba043a457d9289049324915861886c2a62))
+* **文章页:** 添加文章版权许可协议说明 ([a145a73](https://github.com/Liksone/halo-theme-sora/commit/a145a733071be620730cd7597d57104943ce3154))
+* 添加页脚设置 ([c28755b](https://github.com/Liksone/halo-theme-sora/commit/c28755bbde18dc4a69f872734fc2b8924598bb10))
+
+
+### 🐞 Bug Fixes
+
+* 修复文章目录宽度问题 ([7031967](https://github.com/Liksone/halo-theme-sora/commit/7031967f574e98727d448e91e91b753cb953457d)), closes [#3](https://github.com/Liksone/halo-theme-sora/issues/3)
+
+
+### 🔨 Others
+
+* 修改一些样式 ([356d8a1](https://github.com/Liksone/halo-theme-sora/commit/356d8a16883022b4efea441b365b1cb712d4f12d))
+* 修改分类页、标签页卡片样式 ([3cb8e05](https://github.com/Liksone/halo-theme-sora/commit/3cb8e055d0a82ada0dbf427e05737114844e8ac5))
+* 删除无用静态资源 ([3759c8a](https://github.com/Liksone/halo-theme-sora/commit/3759c8a438d806998bc0d87626a9568d5e852ac4))
+* 添加卡片样式 ([c50889f](https://github.com/Liksone/halo-theme-sora/commit/c50889f7e024a7637e9151c534608b8b4b58dff7))
+* 重构 iconify 图标样式 ([d34b62b](https://github.com/Liksone/halo-theme-sora/commit/d34b62b11fa2e243d7e93f24f9847251309c1762))
+* 重构配色方案 ([23ab7dd](https://github.com/Liksone/halo-theme-sora/commit/23ab7dd939497bdd2d512946ca3c54becc0353ac))
+
 ## [0.3.0](https://github.com/Liksone/halo-theme-sora/compare/v0.2.3...v0.3.0) (2025-04-18)
 
 
