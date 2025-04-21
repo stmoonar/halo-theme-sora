@@ -1,4 +1,8 @@
-Sora 意为「穹」，象征着无限的可能性、广阔的空间和创造力。
+<h1 align="center">Sora</h1>
+
+<p align="center">Sora 意为「穹」，象征着无限的可能性、广阔的空间和创造力<p>
+
+<p align="center" style="color: #59636e;">若君喜欢这个主题，欢迎 🌟Star！</p>
 
 # 设计思路
 
