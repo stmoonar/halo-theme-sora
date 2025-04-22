@@ -43,13 +43,25 @@ HarmonyOS Sans SC 调用服务器本地字体，其他字体调用第三方 [CDN
 
 最后选择 `ui-serif`、`serif`，`ui-sans-serif`、`sans-serif`， `ui-monospace`、`monospace` 作为 fallback 字体。
 
+## 导航栏
+
+![](/docs/image5.png)
+
+左侧显示站点标题。
+
+右侧的分割线前显示一些页面，与 Halo 后台的菜单关联。支持主菜单下的子菜单。
+
+![](/docs/image6.png)
+
+分割线后显示搜索按钮和英文界面（待开发）。
+
 ## 页脚
+
+![](/docs/image2.png)
 
 首行是版权说明，格式为「© 建站时间 · 版权所有者」。
 
 尾行是 Halo 和主题的链接。
-
-![](/docs/image2.png)
 
 ## 文章页
 
@@ -71,6 +83,30 @@ HarmonyOS Sans SC 调用服务器本地字体，其他字体调用第三方 [CDN
 
 ### 时效性提示
 
+提示读者此文的时效性，因为有些信息的价值随着时间的流逝会不断削减。
+
+![](/docs/image4.png)
+
+以更新时间（若有）或发布时间为准，显示距今的天数。
+
+「春去秋来」部分的灵感源自[这里](https://ld246.com/article/1610896675951)，每次刷新网页时通过 JavaScript 从词库
+
+```javascript
+[
+  "时过境迁",
+  "沧海桑田",
+  "天翻地覆",
+  "水流花落",
+  "斗转星移",
+  "物是人非",
+  "时移世易",
+  "物换星移",
+  "春去秋来",
+]
+```
+
+中随机选取显示。
+
 ### 文章目录
 
 Halo 没有内建目录支持，于是通过 JavaScript 从 HTML 提取标题来生成目录。支持 H1、H2、H3、H4 四级标题。
@@ -85,7 +121,7 @@ Halo 没有内建目录支持，于是通过 JavaScript 从 HTML 提取标题来
 
 ![](/docs/image1.png)
 
-### 代码块
+#### 代码块
 
 使用 `highlight.js` 代码高亮，需要在 Halo 后台开启[相应插件](https://www.halo.run/store/apps/app-sqpgf)。
 
