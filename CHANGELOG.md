@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.5.0](https://github.com/Liksone/halo-theme-sora/compare/v0.4.0...v0.5.0) (2025-04-22)
+
+
+### ✨ Features
+
+* **导航栏:** 关联导航栏到后台菜单设置 ([678a5f5](https://github.com/Liksone/halo-theme-sora/commit/678a5f5828d37f1f4e4e507c5d921c35aecd54fc)), closes [#5](https://github.com/Liksone/halo-theme-sora/issues/5)
+* 添加文章时效性提示 ([fbf78fb](https://github.com/Liksone/halo-theme-sora/commit/fbf78fb69b9430473c4790d3a883815684999db6))
+
+
+### 🐞 Bug Fixes
+
+* **导航栏:** 去除 <a> 的下划线样式 ([d794dc3](https://github.com/Liksone/halo-theme-sora/commit/d794dc348fab8ac43ffd55109c1b174873b59922))
+* **文章页:** 修复版权许可协议中元素的间距 ([fad3841](https://github.com/Liksone/halo-theme-sora/commit/fad38419ef8f5bd0a145a904c204d840bf02d9ea))
+* **文章页:** 去除文章元信息处分类和标签链接的下划线样式 ([1a062d6](https://github.com/Liksone/halo-theme-sora/commit/1a062d66db26a1115c1351b0ff9523fa60a30ce4))
+
+
+### 🔨 Others
+
+* 添加注释 ([7fd8d2a](https://github.com/Liksone/halo-theme-sora/commit/7fd8d2ace4ee54de32d84e6ce82ab270e9471a29))
+
 ## [0.4.0](https://github.com/Liksone/halo-theme-sora/compare/v0.3.0...v0.4.0) (2025-04-21)
 
 
