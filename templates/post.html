@@ -63,7 +63,7 @@
           <span>
             <th:block th:each="category : ${post.categories}">
               <a
-                class="text-inherit"
+                class="text-inherit no-underline"
                 th:href="${category.status.permalink}"
                 th:text="${category.spec.displayName}"
               ></a>
@@ -76,7 +76,7 @@
           <span>
             <th:block th:each="tag : ${post.tags}">
               <a
-                class="text-inherit"
+                class="text-inherit no-underline"
                 th:href="${tag.status.permalink}"
                 th:text="${tag.spec.displayName}"
               ></a>
