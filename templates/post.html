@@ -28,6 +28,7 @@
         <span>
           <span class="icon-[bx--calendar-alt] iconify-inline"></span>
           <time
+            id="post-publish-time"
             th:text="${#dates.format(post.spec.publishTime, 'yyyy-MM-dd')}"
           ></time>
         </span>
@@ -37,7 +38,10 @@
             th:if="${post.metadata.annotations.updateTime} != ${#dates.format(post.spec.publishTime, 'yyyy-MM-dd')}"
           >
             <span class="icon-[bx--calendar-check] iconify-inline"></span>
-            <time th:text="${post.metadata.annotations.updateTime}"></time>
+            <time
+              id="post-update-time"
+              th:text="${post.metadata.annotations.updateTime}"
+            ></time>
           </span>
         </th:block>
         <th:block th:unless="${#annotations.get(post, 'updateTime')}">
@@ -46,6 +50,7 @@
           >
             <span class="icon-[bx--calendar-check] iconify-inline"></span>
             <time
+              id="post-update-time"
               th:text="${#dates.format(post.status.lastModifyTime, 'yyyy-MM-dd')}"
             ></time>
           </span>
@@ -99,6 +104,11 @@
       <!-- <div class="card abstract my-4 text-sm"> -->
       <!--   <span th:text="${post.status.excerpt}"></span> -->
       <!-- </div> -->
+
+      <!-- 时效性提示 -->
+      <div class="card post-time-tips text-gray my-4 text-sm">
+        <span id="post-time-tips-span"></span>
+      </div>
 
       <section class="relative">
         <div id="post-content" th:utext="${post.content.content}"></div>

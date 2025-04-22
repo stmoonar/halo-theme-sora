@@ -57,3 +57,51 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   })();
 });
+
+// 文章时效性提示
+
+function countDaysBetween(isoDate1, isoDate2) {
+  // 将 ISO 8601 时间字符串解析为 Date 对象
+  const date1 = new Date(isoDate1);
+  const date2 = new Date(isoDate2);
+  // 转换为时间戳（毫秒）
+  const time1 = date1.getTime();
+  const time2 = date2.getTime();
+  // 计算时间差（毫秒），并转换为天数
+  const timeDifference = Math.abs(time2 - time1); // 取绝对值，确保结果为正数
+  const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+  return daysDifference;
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const now = Date.now();
+  const date =
+    document.getElementById("post-update-time") === null
+      ? document.getElementById("post-publish-time").textContent
+      : document.getElementById("post-update-time").textContent;
+
+  const prefix =
+    document.getElementById("post-update-time") === null
+      ? "发布于 "
+      : "更新于 ";
+
+  const randomWords = [
+    "时过境迁",
+    "沧海桑田",
+    "天翻地覆",
+    "水流花落",
+    "斗转星移",
+    "物是人非",
+    "时移世易",
+    "物换星移",
+    "春去秋来",
+  ];
+  const randomIndex = Math.floor(Math.random() * randomWords.length);
+
+  document.getElementById("post-time-tips-span").textContent =
+    "本文" +
+    prefix +
+    countDaysBetween(date, now) +
+    " 天前，其中的信息可能已经" +
+    randomWords[randomIndex];
+});
