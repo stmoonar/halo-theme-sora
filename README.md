@@ -85,6 +85,10 @@ Halo 没有内建目录支持，于是通过 JavaScript 从 HTML 提取标题来
 
 ![](/docs/image1.png)
 
+### 代码块
+
+使用 `highlight.js` 代码高亮，需要在 Halo 后台开启[相应插件](https://www.halo.run/store/apps/app-sqpgf)。
+
 ### 尾部
 
 #### 版权许可协议
