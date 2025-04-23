@@ -211,18 +211,26 @@
         </div>
 
         <!-- 赞赏 -->
-        <!-- <div class="my-8 flex justify-center gap-4 text-sm"> -->
-        <!--   <span class="card-small"> -->
-        <!--     <span -->
-        <!--       class="iconify-inline icon-[flowbite--thumbs-up-solid]" -->
-        <!--     ></span> -->
-        <!--     赞 -->
-        <!--   </span> -->
-        <!--   <span class="card-small"> -->
-        <!--     <span class="iconify-inline icon-[ph--coffee-fill]"></span> -->
-        <!--     赏 -->
-        <!--   </span> -->
-        <!-- </div> -->
+        <div class="my-8 flex justify-center gap-4 text-sm">
+          <button
+            class="card-small cursor-pointer"
+            id="upvote-button"
+            th:data-post-id="${post.metadata.name}"
+          >
+            <span
+              class="iconify-inline icon-[flowbite--thumbs-up-solid]"
+            ></span>
+            赞
+            <span
+              id="upvote-number"
+              th:text="${post.stats?.upvote ?: 0}"
+            ></span>
+          </button>
+          <!--   <span class="card-small"> -->
+          <!--     <span class="iconify-inline icon-[ph--coffee-fill]"></span> -->
+          <!--     赏 -->
+          <!--   </span> -->
+        </div>
 
         <!-- 目录  -->
         <aside
@@ -258,6 +266,9 @@
         main.generateTOC();
         main.scrollHighlightTOC();
         main.clickHighlightTOC();
+
+
+        main.upvote();
       });
     </script>
   </body>

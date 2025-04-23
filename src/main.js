@@ -2,6 +2,7 @@ import "./main.css";
 //import "./test/lapis.css";
 
 export * from "./TOC.js";
+export * from "./upvote.js";
 
 var to_top = function () {
   var btn = document.getElementsByClassName("to-top")[0];
