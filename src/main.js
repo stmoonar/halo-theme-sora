@@ -20,7 +20,7 @@ var to_top = function () {
 window.addEventListener("scroll", to_top);
 
 // 使得外部链接在新窗口中打开
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
   /* // 获取所有链接
   const links = document.querySelectorAll("a");
 
@@ -39,7 +39,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // 字数统计 + 预计阅读时间
-document.addEventListener("DOMContentLoaded", function () {
+//
+export function wordCountAndReadTime() {
   // 获取指定的元素
   const element = document.querySelector("#post-content");
   // 计算字数
@@ -57,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
       return `${min}~${max} min`;
     }
   })();
-});
+}
 
 // 文章时效性提示
 
@@ -74,7 +75,7 @@ function countDaysBetween(isoDate1, isoDate2) {
   return daysDifference;
 }
 
-document.addEventListener("DOMContentLoaded", function () {
+export function generateTimeTips() {
   const now = Date.now();
   const date =
     document.getElementById("post-update-time") === null
@@ -105,4 +106,4 @@ document.addEventListener("DOMContentLoaded", function () {
     countDaysBetween(date, now) +
     " 天前，其中的信息可能已经" +
     randomWords[randomIndex];
-});
+}
