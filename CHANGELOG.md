@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.5.2](https://github.com/Liksone/halo-theme-sora/compare/v0.5.1...v0.5.2) (2025-04-23)
+
+
+### ✨ Features
+
+* 添加对自定义页面的支持 ([76fff82](https://github.com/Liksone/halo-theme-sora/commit/76fff82f78baa33bcafd120ef0240800b4095250)), closes [#7](https://github.com/Liksone/halo-theme-sora/issues/7)
+
+
+### 🐞 Bug Fixes
+
+* **首页:** 关联首页导航栏到后台菜单设置 ([39bff9d](https://github.com/Liksone/halo-theme-sora/commit/39bff9d9b98d1feecab66741224614b34c227f55))
+
 ## [0.5.1](https://github.com/Liksone/halo-theme-sora/compare/v0.5.0...v0.5.1) (2025-04-23)
 
 
