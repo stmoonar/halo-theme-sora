@@ -151,6 +151,16 @@ Halo 没有内建目录支持，于是通过 JavaScript 从 HTML 提取标题来
 
 单个分类 / 标签下的文章展示效果与首页一致。
 
+## 关于页
+
+通过自定义页面实现。
+
+![](/docs/image8.png)
+
+![](/docs/image9.png)
+
+采用与文章页一致的排版。
+
 # 致谢
 
 - [Pedro-null/halo-theme-hingle2.0](https://github.com/Pedro-null/halo-theme-hingle2.0)

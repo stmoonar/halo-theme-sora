@@ -114,6 +114,10 @@
     padding: 0 32px;
   }
 
+  article {
+    @apply mx-auto w-full max-w-[600px] lg:max-w-[800px];
+  }
+
   /* 标题 */
   h1,
   h2,
