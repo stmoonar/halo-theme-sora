@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.5.1](https://github.com/Liksone/halo-theme-sora/compare/v0.5.0...v0.5.1) (2025-04-23)
+
+
+### ✨ Features
+
+* **文章页:** 添加点赞功能 ([399671a](https://github.com/Liksone/halo-theme-sora/commit/399671a187feee937d15cb6b986f1cacd20245e3))
+
+
+### 🐞 Bug Fixes
+
+* **文章页:** 修复 JavaScript 函数在其他页面因错误加载引起的报错 ([546f43c](https://github.com/Liksone/halo-theme-sora/commit/546f43cb9d69aa61c29489ccb0431a2955285777))
+
 ## [0.5.0](https://github.com/Liksone/halo-theme-sora/compare/v0.4.0...v0.5.0) (2025-04-22)
 
 
