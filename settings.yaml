@@ -19,6 +19,26 @@ spec:
               value: 1
             - label: 关闭
               value: 0
+    - group: comment
+      label: 评论
+      formSchema:
+        - $formkit: group
+          name: Artalk
+          label: Artalk
+          help: Halo 内置评论够用时不用在乎这个
+          children:
+            - $formkit: radio
+              name: enable
+              label: 开启 Artalk 评论
+              value: 0
+              options:
+                - label: 开启
+                  value: 1
+                - label: 关闭
+                  value: 0
+            - $formkit: text
+              name: server
+              label: Artalk 后端地址
     - group: social
       label: 社交媒体
       formSchema:

@@ -251,6 +251,26 @@
           th:attr="name=${post.metadata.name}"
         />
       </div>
+
+      <th:block
+        class="mt-16"
+        th:if="${theme.config.comment.Artalk.enable}"
+        th:with="server=${theme.config.comment.Artalk.server}"
+      >
+        <div id="artalk"></div>
+
+        <link th:href="@{${server} + '/dist/Artalk.css'}" rel="stylesheet" />
+        <script th:src="@{${server} + '/dist/Artalk.js'}"></script>
+
+        <script>
+          Artalk.init({
+            el: "#artalk",
+            site: "Blog",
+            // pageKey: "[[${post.metadata.name}]]",
+            server: "[[${server}]]", // 后端地址
+          });
+        </script>
+      </th:block>
     </article>
 
     <aside>
