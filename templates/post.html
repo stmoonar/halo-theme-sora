@@ -63,7 +63,6 @@
           <span>
             <th:block th:each="category : ${post.categories}">
               <a
-                class="text-inherit no-underline"
                 th:href="${category.status.permalink}"
                 th:text="${category.spec.displayName}"
               ></a>
@@ -76,7 +75,6 @@
           <span>
             <th:block th:each="tag : ${post.tags}">
               <a
-                class="text-inherit no-underline"
                 th:href="${tag.status.permalink}"
                 th:text="${tag.spec.displayName}"
               ></a>
@@ -155,7 +153,6 @@
               <div>
                 <a
                   href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans"
-                  class="text-inherit no-underline"
                 >
                   <!-- <img class="h-8" th:src="@{/assets/images/CC-BY-NC-SA.svg}" /> -->
                   <span
@@ -183,7 +180,7 @@
             <span class="flex gap-2">
               <th:block th:if="${not #lists.isEmpty(post.categories)}">
                 <a
-                  class="card-small text-inherit no-underline"
+                  class="card-small"
                   th:each="category : ${post.categories}"
                   th:href="${category.status.permalink}"
                 >
@@ -198,7 +195,7 @@
             <span class="flex gap-2">
               <th:block th:if="${not #lists.isEmpty(post.tags)}">
                 <a
-                  class="card-small text-inherit no-underline"
+                  class="card-small"
                   th:each="tag : ${post.tags}"
                   th:href="${tag.status.permalink}"
                 >

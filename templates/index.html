@@ -17,7 +17,7 @@
           <!-- 社交媒体 -->
           <div class="mt-5">
             <th:block th:each="item : ${theme?.config?.social?.socials}">
-              <a class="text-black no-underline" th:href="@{${item.url}}">
+              <a class="text-black" th:href="@{${item.url}}">
                 <span
                   class="iconify-large"
                   th:classappend="${{
@@ -50,7 +50,7 @@
             <!-- </a> -->
 
             <a
-              class="text-black no-underline"
+              class="text-black"
               th:if="${theme.config.genernal.rss == 1}"
               href="/rss.xml"
             >
@@ -88,7 +88,7 @@
         <a
           th:each="post : ${posts.items}"
           th:href="@{${post.status.permalink}}"
-          class="index-post-card hover:shadow-card text-black no-underline transition duration-300"
+          class="index-post-card hover:shadow-card text-black transition duration-300"
         >
           <img
             th:if="${!#strings.isEmpty(post.spec.cover)}"

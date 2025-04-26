@@ -76,6 +76,9 @@
   --color-primary-950: #5d003c;
 
   --color-primary: var(--color-primary-900);
+  /* --color-primary: hsl(318.57, 94.03%, 26.27%); */
+  /* --color-primary-soft: hsl(318.57 94.03% 26.27% / 15%); */
+  --color-primary-soft: rgb(from var(--color-primary) r g b / 0.15);
 
   --color-gray-light: var(--color-gray-100);
   --color-gray: var(--color-neutral-600);
@@ -205,15 +208,26 @@
   } */
 
   /* 链接 */
-  a {
+  #post-content a {
     color: var(--color-primary);
-    /* text-decoration: underline; */
+    text-decoration: none;
+    background: linear-gradient(
+        var(--color-primary-soft),
+        var(--color-primary-soft)
+      )
+      no-repeat bottom / 100% 0.1em;
   }
 
-  a:hover {
-    text-decoration: underline;
-    /* color: #ba3329; */
-    /* color: var(--color-primary-800); */
+  #post-content a:hover {
+    /* text-decoration: underline; */
+
+    transition: all 0.2s;
+    background-size: 100% 100%;
+    border-radius: 0.3rem;
+  }
+
+  footer a {
+    color: var(--color-primary);
   }
 
   /* 引用 */
