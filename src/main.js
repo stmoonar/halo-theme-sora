@@ -3,6 +3,7 @@ import "./main.css";
 
 export * from "./TOC.js";
 export * from "./upvote.js";
+export * from "./linkIcon.js";
 
 var to_top = function () {
   var btn = document.getElementsByClassName("to-top")[0];
