@@ -31,7 +31,7 @@
       <span th:if="${not #strings.isEmpty(theme.config.footer.beian.police)}">
         <img th:src="@{/assets/images/police.png}" class="inline h-[1rem]" />
         <a
-          href="https://beian.mps.gov.cn"
+          th:href="${theme.config.footer.beian.policeLink} ?: 'https://beian.mps.gov.cn'"
           th:text="${theme.config.footer.beian.police}"
         ></a
       ></span>
