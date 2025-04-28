@@ -13,7 +13,10 @@
       </span>
     </div>
 
-    <div class="text-sm">
+    <div
+      th:if="${not #strings.isEmpty(theme.config.footer.beian.icp) or not #strings.isEmpty(theme.config.footer.beian.police)}"
+      class="text-sm"
+    >
       <span th:if="${not #strings.isEmpty(theme.config.footer.beian.icp)}">
         <a
           href="https://beian.miit.gov.cn"
