@@ -12,6 +12,28 @@
       >
       </span>
     </div>
+
+    <div class="text-sm">
+      <span th:if="${not #strings.isEmpty(theme.config.footer.beian.icp)}">
+        <a
+          href="https://beian.miit.gov.cn"
+          th:text="${theme.config.footer.beian.icp}"
+        ></a>
+      </span>
+      <span
+        th:if="${not #strings.isEmpty(theme.config.footer.beian.icp) and not #strings.isEmpty(theme.config.footer.beian.police)}"
+      >
+        ·
+      </span>
+      <span th:if="${not #strings.isEmpty(theme.config.footer.beian.police)}">
+        <img th:src="@{/assets/images/police.png}" class="inline h-[1rem]" />
+        <a
+          href="https://beian.mps.gov.cn"
+          th:text="${theme.config.footer.beian.police}"
+        ></a
+      ></span>
+    </div>
+
     <div>
       Powered by
       <a href="https://www.halo.run">Halo</a>

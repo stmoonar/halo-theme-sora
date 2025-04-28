@@ -113,3 +113,13 @@ spec:
               name: author
               label: 版权所有者
               help: "默认为站点标题"
+        - $formkit: group
+          name: beian
+          label: 备案
+          children:
+            - $formkit: text
+              name: icp
+              label: ICP
+            - $formkit: text
+              name: police
+              label: 公安
