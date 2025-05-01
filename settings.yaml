@@ -19,6 +19,16 @@ spec:
               value: 1
             - label: 关闭
               value: 0
+        - $formkit: radio
+          name: language
+          label: 多语言支持
+          help: 待开发，不用在乎这个
+          value: 0
+          options:
+            - label: 开启
+              value: 1
+            - label: 关闭
+              value: 0
     - group: comment
       label: 评论
       formSchema:

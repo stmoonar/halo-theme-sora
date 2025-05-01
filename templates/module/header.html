@@ -21,7 +21,7 @@
       <a href="javascript:SearchWidget.open()">
         <span class="icon-[fa-solid--search] iconify-inline"></span>
       </a>
-      <a href="/en">EN</a>
+      <a th:if="${theme.config.general.language}" href="/en">EN</a>
     </div>
   </nav>
 </header>
