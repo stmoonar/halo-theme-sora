@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.5.9](https://github.com/Liksone/halo-theme-sora/compare/v0.5.8...v0.5.9) (2025-05-01)
+
+
+### 🐞 Bug Fixes
+
+* **首页:** 修复移动端适配 ([583dc2c](https://github.com/Liksone/halo-theme-sora/commit/583dc2cba7ff7e17faa02a0214a40b1200dbc64a)), closes [#11](https://github.com/Liksone/halo-theme-sora/issues/11)
+
+
+### 🔨 Others
+
+* **首页:** 重构 header 为 flex 布局 ([38ecd90](https://github.com/Liksone/halo-theme-sora/commit/38ecd90dedf79283d0cb5e468ce7680d8cea1035))
+
 ## [0.5.8](https://github.com/Liksone/halo-theme-sora/compare/v0.5.7...v0.5.8) (2025-05-01)
 
 
