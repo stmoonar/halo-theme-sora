@@ -4,6 +4,12 @@
 
 <p align="center" style="color: #59636e;">若君喜欢这个主题，欢迎 🌟Star！</p>
 
+# [预览](https://blog.liks.space)
+
+## 谁在使用
+
+欢迎提一个 [Issue](https://github.com/Liksone/halo-theme-sora/issues/new?template=addWebsite.yml) 来展示自己的网站。
+
 # 设计思路
 
 > 一切从简，避免花哨。样式服务于内容的呈现。
