@@ -4,7 +4,7 @@ metadata:
   name: theme-sora-setting
 spec:
   forms:
-    - group: genernal
+    - group: general
       label: 基本设置
       formSchema:
         - $formkit: attachment
