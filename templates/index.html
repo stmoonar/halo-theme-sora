@@ -4,10 +4,12 @@
 
   <body>
     <header>
-      <div class="mt-20 mb-20 flex items-center justify-center">
+      <div
+        class="mt-20 mb-20 flex flex-col items-center justify-center gap-8 sm:flex-row sm:gap-14"
+      >
         <img
           th:src="${theme.config.general.avatar}"
-          class="mr-14 h-40 rounded-full filter-none"
+          class="h-40 rounded-full filter-none"
           alt="Avatar"
         />
 
