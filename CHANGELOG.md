@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.5.8](https://github.com/Liksone/halo-theme-sora/compare/v0.5.7...v0.5.8) (2025-05-01)
+
+
+### ⚠ BREAKING CHANGES
+
+* **配置:** 需要重新设置「基本设置」
+
+### 🐞 Bug Fixes
+
+* **配置:** 修复错误的英文拼写 ([9647631](https://github.com/Liksone/halo-theme-sora/commit/96476315e4feab2f0a8daf95096647e8b459f1a6))
+
+
+### 🔨 Others
+
+* **导航栏:** 初始化多语言支持 ([80fe98e](https://github.com/Liksone/halo-theme-sora/commit/80fe98ee1064ebca89d3523212aaded0a48ea1aa)), closes [#11](https://github.com/Liksone/halo-theme-sora/issues/11)
+
 ## [0.5.7](https://github.com/Liksone/halo-theme-sora/compare/v0.5.6...v0.5.7) (2025-04-28)
 
 
