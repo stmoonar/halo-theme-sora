@@ -158,3 +158,35 @@ spec:
             - $formkit: text
               name: link
               label: 许可链接
+    - group: sponsor
+      label: 赞助
+      formSchema:
+        - $formkit: radio
+          name: enable
+          label: 是否启用
+          value: 0
+          options:
+            - label: 开启
+              value: 1
+            - label: 关闭
+              value: 0
+        - $formkit: attachment
+          if: "$enable == 1"
+          name: alipay
+          label: 支付宝二维码
+        - $formkit: attachment
+          if: "$enable == 1"
+          name: wechat
+          label: 微信二维码
+        - $formkit: radio
+          if: "$enable == 1"
+          name: list
+          label: 赞助名单
+          # help: 是否显示赞助名单
+          help: 开发中，不用在乎这个
+          value: 0
+          options:
+            - label: 开启
+              value: 1
+            - label: 关闭
+              value: 0
