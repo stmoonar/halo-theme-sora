@@ -67,7 +67,7 @@ HarmonyOS Sans SC 调用服务器本地字体，其他字体调用第三方 [CDN
 
 首行是版权说明，格式为「© 建站时间 · 版权所有者」。
 
-次行是备案号（非必需）。
+次行是备案号（可选）。
 
 尾行是 Halo 和主题的链接。
 
@@ -172,11 +172,13 @@ Halo 没有内建目录支持，于是通过 JavaScript 从 HTML 提取标题来
 
 在「版权许可」中展示。
 
-#### 点赞
+#### 赞赏
 
 ![](./docs/image7.png)
 
-功能的实现源自 [theme-earth](https://github.com/halo-dev/theme-earth/blob/main/src/alpine-data/upvote.ts)。点赞数据与 Halo 后端通信，通过 localStorage 来判断点赞状态，已点赞时按钮变灰。
+点赞功能的实现源自 [theme-earth](https://github.com/halo-dev/theme-earth/blob/main/src/alpine-data/upvote.ts)。点赞数据与 Halo 后端通信，通过 localStorage 来判断点赞状态，已点赞时按钮变灰。
+
+赞助按钮点击弹出二维码和赞助名单（可选）。
 
 ## 分类页 & 标签页
 
