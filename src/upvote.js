@@ -21,7 +21,7 @@ function getUpvotedPostIds(name) {
 
 function activeUpvote(upvoteNode) {
   if (upvoteNode) {
-    upvoteNode.classList.add("opacity-50");
+    upvoteNode.classList.add("active");
     upvoteNode.classList.remove("cursor-pointer");
   }
 }

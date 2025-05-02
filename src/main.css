@@ -278,6 +278,7 @@
   }
 
   /*表格*/
+
   table {
     width: 100%;
     display: table;
@@ -295,6 +296,12 @@
 
   table tr th {
     font-weight: bold;
+  }
+
+  /* 按钮 */
+
+  button.active {
+    opacity: 0.5;
   }
 
   /*滚动条*/
