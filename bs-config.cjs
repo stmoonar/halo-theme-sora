@@ -2,7 +2,8 @@ module.exports = {
   proxy: "http://localhost:58263",
   files: ["templates/"],
   injectChanges: false,
-  // open: false, // 是否自动打开浏览器
+  // open: "local", // 是否自动打开浏览器
+  browser: "vivaldi",
   // notify: false, // 是否显示通知
   // ghostMode: false, // 是否启用跨设备同步
   /* middleware: [
