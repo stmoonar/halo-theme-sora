@@ -10,6 +10,8 @@
 
 欢迎提一个 [Issue](https://github.com/Liksone/halo-theme-sora/issues/new?template=addWebsite.yml) 来展示自己的网站。
 
+- [Cirzear's Blog](http://blog.cirzear.cn/)
+
 # 设计思路
 
 > 一切从简，避免花哨。样式服务于内容的呈现。
