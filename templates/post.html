@@ -151,27 +151,31 @@
             <div>
               <div class="license-item">许可</div>
               <div>
-                <a th:href="${theme.config.post.copyright.link}">
+                <a
+                  th:href="${theme.config.post.copyright.link} ?: 'https://creativecommons.org/licenses'"
+                >
                   <!-- <img class="h-8" th:src="@{/assets/images/CC-BY-NC-SA.svg}" /> -->
                   <span
                     class="icon-[cib--creative-commons] iconify-inline"
                   ></span>
-                  <span
-                    th:if="${#lists.contains(theme.config.post.copyright.license, 'by')}"
-                    class="icon-[cib--creative-commons-by] iconify-inline"
-                  ></span>
-                  <span
-                    th:if="${#lists.contains(theme.config.post.copyright.license, 'nc')}"
-                    class="icon-[cib--creative-commons-nc] iconify-inline"
-                  ></span>
-                  <span
-                    th:if="${#lists.contains(theme.config.post.copyright.license, 'sa')}"
-                    class="icon-[cib--creative-commons-sa] iconify-inline"
-                  ></span>
-                  <span
-                    th:if="${#lists.contains(theme.config.post.copyright.license, 'nd')}"
-                    class="icon-[cib--creative-commons-nd] iconify-inline"
-                  ></span>
+                  <th:block th:if="${theme.config.post.copyright.license}">
+                    <span
+                      th:if="${#lists.contains(theme.config.post.copyright.license, 'by')}"
+                      class="icon-[cib--creative-commons-by] iconify-inline"
+                    ></span>
+                    <span
+                      th:if="${#lists.contains(theme.config.post.copyright.license, 'nc')}"
+                      class="icon-[cib--creative-commons-nc] iconify-inline"
+                    ></span>
+                    <span
+                      th:if="${#lists.contains(theme.config.post.copyright.license, 'sa')}"
+                      class="icon-[cib--creative-commons-sa] iconify-inline"
+                    ></span>
+                    <span
+                      th:if="${#lists.contains(theme.config.post.copyright.license, 'nd')}"
+                      class="icon-[cib--creative-commons-nd] iconify-inline"
+                    ></span>
+                  </th:block>
                 </a>
               </div>
             </div>
