@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.5.12](https://github.com/Liksone/halo-theme-sora/compare/v0.5.11...v0.5.12) (2025-05-11)
+
+
+### 🐞 Bug Fixes
+
+* **文章页:** 修复页面无法加载的问题 ([874db13](https://github.com/Liksone/halo-theme-sora/commit/874db13ea1a7c80a6cf913597bf58d0e6b799f2b)), closes [#16](https://github.com/Liksone/halo-theme-sora/issues/16)
+
+
+### 🔨 Others
+
+* 调整 bs-config ([8a39141](https://github.com/Liksone/halo-theme-sora/commit/8a391417c06edfb0e4e692d1daaf6af58a4d69ec))
+
 ## [0.5.11](https://github.com/Liksone/halo-theme-sora/compare/v0.5.10...v0.5.11) (2025-05-02)
 
 
