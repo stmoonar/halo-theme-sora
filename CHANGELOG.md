@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.5.13](https://github.com/Liksone/halo-theme-sora/compare/v0.5.12...v0.5.13) (2025-05-15)
+
+
+### 🐞 Bug Fixes
+
+* **文章页:** 修复版权许可—文章链接 ([0fb68c7](https://github.com/Liksone/halo-theme-sora/commit/0fb68c7262be5ffcf233cf8a41a03b2571e8d0c5)), closes [#22](https://github.com/Liksone/halo-theme-sora/issues/22)
+
 ## [0.5.12](https://github.com/Liksone/halo-theme-sora/compare/v0.5.11...v0.5.12) (2025-05-11)
 
 
