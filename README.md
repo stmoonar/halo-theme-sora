@@ -11,6 +11,7 @@
 欢迎提一个 [Issue](https://github.com/Liksone/halo-theme-sora/issues/new?template=addWebsite.yml) 来展示自己的网站。
 
 - [Cirzear's Blog](http://blog.cirzear.cn/)
+- [zuke blog](https://blog.zuke.chat/)
 
 # 设计思路
 
