@@ -13,6 +13,7 @@
 - [Cirzear's Blog](http://blog.cirzear.cn/)
 - [zuke blog](https://blog.zuke.chat/)
 - [一叶轻舟](https://69.197.134.230)
+- [风中的轩语](https://blog.moxuan.xin)
 
 # 设计思路
 
