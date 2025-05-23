@@ -47,6 +47,9 @@ spec:
                 - label: 关闭
                   value: 0
             - $formkit: text
+              name: site
+              label: 站点名
+            - $formkit: text
               name: server
               label: Artalk 后端地址
     - group: social
