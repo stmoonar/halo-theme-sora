@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.5.15](https://github.com/Liksone/halo-theme-sora/compare/v0.5.14...v0.5.15) (2025-05-23)
+
+
+### 🐞 Bug Fixes
+
+* 完善 Artalk 评论系统设置 ([6c278b8](https://github.com/Liksone/halo-theme-sora/commit/6c278b8a0bf1ab439194c42875558d9798322c44))
+
 ## [0.5.14](https://github.com/Liksone/halo-theme-sora/compare/v0.5.13...v0.5.14) (2025-05-16)
 
 
