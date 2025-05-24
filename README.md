@@ -14,6 +14,7 @@
 - [zuke blog](https://blog.zuke.chat/)
 - [一叶轻舟](https://69.197.134.230)
 - [风中的轩语](https://blog.moxuan.xin)
+- [银色星球](https://blog.sss.wiki)
 
 # 设计思路
 
